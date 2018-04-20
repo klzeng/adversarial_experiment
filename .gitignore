@@ -1,4 +1,5 @@
 .pyc
-test.*
-./*photos
-./*image*
+./idea
+test*
+/*photos
+/*image*
