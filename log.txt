@@ -1,0 +1,61 @@
+for source dirctory /scratch/zfeng3/kunling/image_arrays0:
+total: 90
+misclassification count: 86
+count for getting target label: 85
+misclassification rate: 95.5556%
+get target rate: 94.4444%
+
+
+for source dirctory /scratch/zfeng3/kunling/image_arrays1:
+total: 95
+misclassification count: 93
+count for getting target label: 93
+misclassification rate: 97.8947%
+get target rate: 97.8947%
+
+
+for source dirctory /scratch/zfeng3/kunling/image_arrays2:
+total: 72
+misclassification count: 69
+count for getting target label: 69
+misclassification rate: 95.8333%
+get target rate: 95.8333%
+
+
+for source dirctory /scratch/zfeng3/kunling/image_arrays3:
+total: 74
+misclassification count: 74
+count for getting target label: 74
+misclassification rate: 1.000
+get target rate: 1.000
+
+for source dirctory /scratch/zfeng3/kunling/image_arrays4:
+total: 89
+misclassification count: 83
+count for getting target label: 83
+misclassification rate: 93.2584%
+get target rate: 93.2584%
+
+for source dirctory /scratch/zfeng3/kunling/image_arrays5:
+total: 53
+misclassification count: 53
+count for getting target label: 53
+misclassification rate: 1.000
+get target rate: 1.000
+
+total: 473
+misclassificaiton count: 458
+count for getting target label: 457
+misclassification rate: 96.8289%
+get target rate: 96.6173%
+
+analysing hacked images of v3 for vgg16:
+total: 473
+original image predicted correctly by vgg16: 388
+among them, hacked image misclassified by vgg16: 87
+got target label:0
+
+analysing hacked images of v3 for vgg16:
+original image predicted correctly by vgg16: 388
+among them, hacked image misclassified by vgg16: 2
+got target label:0
