@@ -1,3 +1,4 @@
+"""This is the code to calculate the get target rate and the misclassification rate"""
 import numpy as np
 from keras.applications import inception_v3, vgg16
 from sklearn.metrics import accuracy_score
@@ -19,14 +20,6 @@ data = np.load(
 y_tru = data['y_tru']
 y_tar = data['y_tar']
 
-y_tru = y_tru - 1
-y_tar = y_tar - 1
-
-y_tar_shring = np.append(y_tar[:860], y_tar[880:])
-y_tru_shring = np.append(y_tru[:860], y_tru[880:])
-
-y_tar_shring = np.append(y_tar_shring[:280], y_tar_shring[380:])
-y_tru_shring = np.append(y_tru_shring[:280], y_tru_shring[380:])
 
 X = np.squeeze(X, axis=1)
 for j, i in enumerate(X):
@@ -48,5 +41,5 @@ model = vgg16.VGG16()
 
 pre_label = np.argmax(model.predict(X_ad), axis=1)
 
-np.sum(pre_label == y_tar_shring)
-np.sum(pre_label == y_tru_shring)
+np.sum(pre_label == y_tar)
+np.sum(pre_label == y_tru)

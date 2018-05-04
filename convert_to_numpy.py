@@ -1,3 +1,5 @@
+"""This is the code to convert the input image into numpy array"""
+
 import numpy as np
 import os
 import pandas as pd

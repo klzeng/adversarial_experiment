@@ -1,3 +1,4 @@
+"""this is a file to generate adversarial sample by using gradient descent"""
 from keras.applications import InceptionV3
 from keras import backend as K
 import numpy as np
